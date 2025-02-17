@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <h2>User Profile</h2>
+        <div class="user-info">
+            <p>Username: {{ user[0] }}</p>
+            <p>First Name: {{ user[2] }}</p>
+            <p>Last Name: {{ user[3] }}</p>
+            <p>Email: {{ user[4] }}</p>
+        </div>
+        
+        <div class="file-info">
+            <p>Word Count: {{ word_count }}</p>
+            {% if user[5] %} 
+                <p>Download File here: <a href="{{ url_for('download_file', filename=user[5]) }}" download>{{ user[5] }}</a></p>
+            {% else %}
+                <p>No file uploaded.</p>
+            {% endif %}
+        </div>
+
+        <a href="{{ url_for('logout') }}" class="logout-button">Logout</a>
+    </div>
+</body>
+</html>
