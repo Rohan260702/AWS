@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #e7f0ff; /* Light blue background */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    width: 500px; /* Increased width of the container */
+    background-color: #ffffff; /* White background for the form */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #007bff; /* Blue text for the heading */
+}
+
+.error {
+    color: #dc3545; /* Red color for error messages */
+    margin: 10px 0;
+}
+
+.tab {
+    display: flex;
+    justify-content: center; /* Center the tab buttons */
+    margin-bottom: 20px;
+}
+
+.tab button {
+    background: none;
+    border: none;
+    color: #007bff; /* Blue color for buttons */
+    cursor: pointer;
+    font-size: 18px;
+    padding: 10px 20px;
+    margin: 0 5px; /* Space between buttons */
+}
+
+.tab button.active {
+    font-weight: bold;
+    border-bottom: 2px solid #007bff; /* Active button indicator */
+}
+
+form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center align inputs */
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"] {
+    width: 100%; /* Full width */
+    margin: 10px 0;
+    padding: 10px;
+    border: 1px solid #007bff; /* Blue border for inputs */
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="email"]:focus {
+    outline: none;
+    border-color: #0056b3; /* Darker blue on focus */
+}
+
+button {
+    width: 100%; /* Full width */
+    background-color: #007bff; /* Blue button */
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px; /* Space above buttons */
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+.user-info {
+    background-color: #d1ecf1; /* Light blue background for user info box */
+    padding: 20px;
+    border-radius: 5px;
+    margin: 20px 0; /* Space above and below */
+    width: 100%; /* Full width of container */
+}
+
+.user-info h3 {
+    margin: 0 0 10px; /* Adjust heading margins */
+}
+
+.logout-button {
+    background-color: #007bff; /* Blue logout button */
+    color: white;
+    padding: 10px 15px;
+    text-decoration: none;
+    border-radius: 5px;
+    position: absolute; /* Position the logout button */
+    top: 20px; /* Distance from the top */
+    right: 20px; /* Distance from the right */
+}
+
+.logout-button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
